@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/docusaurus/tsconfig.json",
+  "compilerOptions": {
+    "lib": ["DOM", "ESNext"],
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "strict": true,
+    "types": ["@types/jest"],
+    "jsxImportSource": "@emotion/react"
+  },
+  "exclude": ["src/sw.js"]
+}
