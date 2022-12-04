@@ -29,7 +29,7 @@ const config = {
     metadata: [
       {
         name: 'keywords',
-        content: '开发语言, 计算机基础, 协议, 单片机',
+        content: '开发语言, 计算机基础, 协议, 单片机, 开发工具',
       },
     ],
     docs: {
@@ -71,14 +71,14 @@ const config = {
               label: '读书笔记',
               to: 'docs/book/',
             },
-            {
-              label: '工具推荐',
-              to: 'docs/tools/',
-            },
-            {
-              label: '标签分类',
-              to: 'docs/tags',
-            },
+            // {
+            //   label: '工具推荐',
+            //   to: 'docs/tools/',
+            // },
+            // {
+            //   label: '标签分类',
+            //   to: 'docs/tags',
+            // },
           ],
         },
         // {
