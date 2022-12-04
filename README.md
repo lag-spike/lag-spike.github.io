@@ -60,6 +60,17 @@ const config = {
 GIT_USER=(organizationName) USE_SSH=true yarn deploy
 ```
 
+```sh
+# 注意此处按需求修改, 是否需要覆盖推送 --force
+# node_modules\@docusaurus\core\lib\commands\deploy.js
+
+# if (shellExecLog(`git push --force origin ${deploymentBranch}`).code !== 0) 
+if (shellExecLog(`git push origin ${deploymentBranch}`).code !== 0) 
+{
+    throw new Error('Running "git push" command failed. Does the GitHub user account you are using have push access to the repository?');
+}
+```
+
 ## 4. License
 
 [MIT licensed](https://github.com/lag-spike/lag-spike.github.io/blob/main/LICENSE).
